@@ -347,7 +347,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void frmPerfilDeColaboradoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frmPerfilDeColaboradoresActionPerformed
         // TODO add your handling code here:
         
-        cc.AbrirPerfilDeColaboradores();
+        cc.AbrirPerfilDeColaboradoresParametros();
     }//GEN-LAST:event_frmPerfilDeColaboradoresActionPerformed
 
     private void frmGestionarUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_frmGestionarUsuariosActionPerformed

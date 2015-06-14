@@ -12,6 +12,7 @@ import Interfaces.LoginUser;
 import Interfaces.MapaDeDenuncias;
 import Interfaces.MenuPrincipal;
 import Interfaces.PerfilDeColaboradores;
+import Interfaces.PerfilDeColaboradoresParametros;
 import Interfaces.PerfilDeJueces;
 import Interfaces.PerfilDeJuecesParametros;
 import Interfaces.RendimientoDeDepartamento;
@@ -123,6 +124,12 @@ public class ControladorClases {
         
         public void AbrirPerfilDeJuecesParametros(){
             PerfilDeJuecesParametros abrir = new PerfilDeJuecesParametros();
+            abrir.setVisible(true);
+            abrir.setLocationRelativeTo(null);
+        }
+        
+        public void AbrirPerfilDeColaboradoresParametros(){
+            PerfilDeColaboradoresParametros abrir = new PerfilDeColaboradoresParametros();
             abrir.setVisible(true);
             abrir.setLocationRelativeTo(null);
         }
