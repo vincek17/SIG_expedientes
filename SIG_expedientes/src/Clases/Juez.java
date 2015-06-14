@@ -147,11 +147,11 @@ public class Juez {
         cn = con.AbrirConexion();
         ArrayList dato = new ArrayList();
         try {           
-            String sql = "SQL";
+            String sql = "EXECUTE PerfilDeJuez "+ id;
             PreparedStatement cmd = cn.prepareStatement(sql);
             ResultSet rs = cmd.executeQuery();
             while (rs.next()) {
-                dato.add(rs.getString(1));//mod
+                dato.add(rs.getString(1));
                 dato.add(rs.getString(2));
                 dato.add(rs.getString(3));
                 dato.add(rs.getString(4));
@@ -160,11 +160,7 @@ public class Juez {
                 dato.add(rs.getString(7));
                 dato.add(rs.getString(8));
                 dato.add(rs.getString(9));
-             //   dato.add(rs.getString(10));
-             //   dato.add(rs.getString(11));
-             //   dato.add(rs.getString(12));
-             //   dato.add(rs.getString(13));
-             //   dato.add(rs.getString(14));
+                dato.add(rs.getString(10));
             }
          } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error: " + e);
